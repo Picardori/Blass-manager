@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Notre site</h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="form-box">
+            <div class="button-box">
+                <button type="button" class="toggle-btn" onclick="showForm('signin')">CONNEXION</button>
+                <button type="button" class="toggle-btn" onclick="showForm('signup')">INSCRIPTION</button>
+            </div>
+            
+
+            <form id="signin" class="input" action="/login" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Nom d'utilisateur" minlength="6" maxlength="12" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Mot de passe" minlength="8" maxlength="16" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">CONNEXION</button>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="remember"> Se souvenir de moi</label>
+                    <a href="forgot.html">Mot de passe oublié ?</a>
+                </div>
+            </form>
+
+
+            <form id="signup" class="input" style="display: none;" action="/signup" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Nom d'utilisateur" minlength="6" maxlength="12" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Mot de passe" minlength="8" maxlength="16" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class="bx bxs-envelope"></i>
+                </div>
+                <button type="submit" class="btn">INSCRIPTION</button>
+                <div class="terms">
+                    <label><input type="checkbox" name="terms" required> J'accepte </label>
+                    <a href="#">les termes et conditions</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

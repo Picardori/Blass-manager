@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image1.jpg'); /* Ajout de l'image de fond */
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre tout le fond */
+    background-position: center center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre semi-transparent */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.bar-chart {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    height: 100px;
+}
+
+.bar {
+    width: 20px;
+    background-color: #45105e; 
+}
+
+.demos ul, .opportunities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.demos .highlight {
+    margin-top: 15px;
+    background-color: #45105e; /* Couleur violet clair pour la mise en surbrillance */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.performance .pipeline div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.avg-value h3 {
+    color: #8306ff; /* Violet intense pour les valeurs moyennes */
+    font-size: 24px;
+}
+
+.close-ratio .gauge {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#8306ff 25%, #af87c1 25%); /* Dégradé violet pour l'indicateur */
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.cycle-length h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
